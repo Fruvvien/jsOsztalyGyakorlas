@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="feladat3.js"></script>
+    <script src="main3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" class="container" >
+        <div class="form-group">
+            <label for="nev">Név</label>
+            <input type="text" name="nev" id="nev" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="ar">Ár</label>
+            <input type="number" name="ar" id="ar" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="kategoria">Kategória</label>
+            <select class="form-control" name="kategoria" id="kategoria">
+                <option value="leves">Leves</option>
+                <option value="foetel">Főétel</option>
+                <option value="pizza">Pizza</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" value="alma" name="alma" id="alma">
+                <label for="alma">Alma</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="paradicsom" name="paradicsom" id="paradicsom">
+                <label for="paradicsom">Paradicsom</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="krumpli" name="krumpli"  id="krumpli">
+                <label for="krumpli">Krumpli</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="hagyma" name="hagyma"  id="hagyma">
+                <label for="hagyma">Hagyma</label>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-success">Elküld</button>
+        </div>
+    </form>
+    <table class="table container">
+        <thead>
+          <tr>
+            <th scope="col">Név</th>
+            <th scope="col">Ár</th>
+            <th scope="col">Kategória</th>
+            <th scope="col">Összetevők</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+          
+         
+        </tbody>
+      </table>
+
+</body>
+</html>
